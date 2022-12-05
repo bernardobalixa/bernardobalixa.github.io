@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bernardo Balixa</title>
+
+    <!-- Styles import -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/bars.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <!-- Scripts import -->
+    <script src="./scripts/initialAnim.js"></script>
+    <script src="./scripts/elements.js"></script>
+    <script src="./scripts/linesContents.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!-- Boxicons import -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
+
 <body>
-    Bernardo Balixa
+    <div id="main_container">
+        <div id="editor_container">
+            <div id="editor">
+                <div class="top_bar">
+                    <div id="dot_minimize" class="dot minimize"></div>
+                    <div id="dot_expand" class="dot expand"></div>
+                    <div id="dot_close" class="dot close"></div>
+                </div>
+                <div class="config_bar">
+                    <ul class="config_list">
+                        <li>File</li>
+                        <li>Edit</li>
+                        <li>Selection</li>
+                        <li>View</li>
+                        <li>Go</li>
+                        <li>Run</li>
+                        <li>Terminal</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+                <div class="content_bar">
+                    <div class="code_bar">
+                        <div class="files_bar">
+                            <ul>
+                                <li>
+                                    <i class='icon icon_html bx bxl-html5'></i>
+                                    Main.html
+                                    <i class='icon_close bx bx-x'></i>
+                                </li>
+                                <li>
+                                    <i class='icon icon_js bx bxl-javascript'></i>
+                                    Skills.js
+                                    <i class='icon_close bx bx-x'></i>
+                                </li>
+                                <li>
+                                    <i class='icon icon_css bx bxl-css3'></i>
+                                    Contact.css
+                                    <i class='icon_close bx bx-x'></i>
+                                </li>
+                                <li>
+                                    <i class='icon icon_git bx bxl-github'></i>
+                                    About_Me.git
+                                    <i class='icon_close bx bx-x'></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="raw_code_container">
+                            <div class="raw_code_bar">
+                                <div class="lines_bar"></div>
+                                <div class="lines_code_bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side_bar">
+                        <div class="actions_bar">
+                            <i class='icon bx bx-file-blank'></i>
+                            <i class='icon bx bx-search'></i>
+                            <i class='icon bx bx-git-branch'></i>
+                            <i class='icon bx bx-bug'></i>
+                            <i class='icon bx bx-category'></i>
+                        </div>
+                        <div class="files_bar">
+                            <span class="menu_title">EXPLORER</span>
+                            <div class="divisor"></div>
+                            <ul class="nav_bar">
+                                <li><i class='icon icon_html bx bxl-html5'></i>Main.html</li>
+                                <li><i class='icon icon_js bx bxl-javascript'></i>Skills.js</li>
+                                <li><i class='icon icon_css bx bxl-css3'></i>Contact.css</li>
+                                <li><i class='icon icon_git bx bxl-github'></i>About_Me.git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i id="pointer" class='bx bxs-pointer'></i>
+    </div>
 </body>
+
 </html>
