@@ -13,16 +13,13 @@
     <link rel="stylesheet" href="./styles/content.css">
     <link rel="stylesheet" href="./styles/animations.css">
 
-    <!-- Scripts import -->
-    <script src="./scripts/initialAnim.js"></script>
-    <script src="./scripts/elements.js"></script>
-    <script src="./scripts/linesContents.js"></script>
-    <script src="./scripts/navigation.js"></script>
-    <script src="./scripts/main.js"></script>
+    <!-- Import of DojoJS -->
+    <script src="./lib/dojo/dojo.js"></script>
 
     <!-- Boxicons import -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 
 <body>
@@ -76,6 +73,7 @@
                             <div class="raw_code_bar">
                                 <div class="lines_bar"></div>
                                 <div class="lines_code_bar"></div>
+                                <div class="scroll_bar"></div>
                             </div>
                         </div>
                     </div>
@@ -103,6 +101,9 @@
         </div>
         <i id="pointer" class='bx bxs-pointer'></i>
     </div>
+
+    <!-- Main script import -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
